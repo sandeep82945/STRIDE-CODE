@@ -1,0 +1,26 @@
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Weights, datasets, generated text, checkpoints and tracking
+models/
+data/
+runs/
+artifacts/
+wandb/
+.cache/
+*.safetensors
+*.pt
+*.pth
+*.bin
+# Local runtimes and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.log
+*.zip

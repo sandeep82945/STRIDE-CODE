@@ -1,0 +1,23 @@
+{
+  "source_snapshot": "qwen4b_scaleup_20260911",
+  "files": {
+    "resumable_checkpoint.py": "262641ea6d2acbc2063db35e29fbc61fd1d36d5dee61f3b538de03bc6618b87d",
+    "format_credit.py": "c190b091e8d34b22b30b52cf656c52e97eecf8ebba42eb60771c2459aec22e24",
+    "native_step_parser.py": "28a8aab5b1416c6826693846de905c474d1af99ae4371703cd764535afb8b1a2",
+    "evaluate_async.py": "a8f68cbda2533d848a594b578fb3ab0287b43fe981b0a1dc149db1b329c1be88",
+    "scoring.py": "4c11638e7753407068a4ced7cd475346eb0fd4f759780a89dcc664aeca7fdb68",
+    "trainer_resumable.py": "c67a283791572b517f64e00c2f370390cca4230030f1505ecdd42b6a1dad4377",
+    "production_stride.py": "a547f1b13423011c68b061d3ea93dffbbe97a6fe896ce709c2310a478a22ab0b",
+    "native_declared_steps.py": "f9caebe7be7ab437157ec649e02586b0d8b0fa9f343e170f5e89f77060489991",
+    "native_contract.py": "e5eeccdcaaed76bdddaccc573f6571cd93479bccfff75fef9716566ff7b59308",
+    "evaluate.py": "51887f65f1c41b3da22abd9142e8a9f2f02d095ef8eeb8ed277aeff92371ecda",
+    "trainer.py": "f2c4a7614f2b7244f91181d6201a06f2d62cc80715ae378721f343cf1b856034",
+    "sampler_worker.py": "6ade835c4f1bfdfcf6480b4a73e64f57ff4d52cca32a0388859aadd4f0b06c47",
+    "credit.py": "51d82169de7731b7e866699f58ead99c59519992a1e68e5dbbcc5c669c49bf52",
+    "trainer_distributed.py": "699517e3b8d8eb6ea39b623806eb5bf90b7840ef23ba488c07263dcc345a5fc7",
+    "pilot_grading/math_reference.py": "556639d769f9e0e826be4fd1b41bd81a956fb378e1c82849f0996235984d87b2",
+    "pilot_grading/integer_reference.py": "02dd5876624ce7ba15c9409f9dc771a835275a8581a0f47face8f37f2ce9ddc8",
+    "pilot_grading/__init__.py": "a8ac54f90b3e206ed1ee693867a6eb6179a6fb95811cd02f6110b7c5a8bb574e",
+    "pilot_grading/relaxed_grader.py": "3299af8dcd145cb9cc68f01a385091360977f5b69605c4bfc902efd7f04e66e2"
+  }
+}

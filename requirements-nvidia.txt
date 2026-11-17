@@ -1,0 +1,10 @@
+# Candidate portable Linux/NVIDIA runtime. GPU smoke testing is required.
+# The original cluster used a prerelease vLLM build; see docs/PROVENANCE.md.
+torch==2.10.0
+vllm==0.17.0
+transformers==4.57.6
+peft==0.18.1
+huggingface-hub==0.36.0
+numpy==2.2.6
+pyarrow==21.0.0
+wandb==0.21.4

@@ -1,0 +1,50 @@
+# Edit this file, then submit: sbatch run.sbatch
+# CLI flags override exported environment variables, then this file.
+# Relative paths below are relative to this file, including alternate --settings files.
+[training]
+model = "qwen4b"                 # qwen4b | qwen17b (Qwen3-1.7B)
+arm = "local_positive"           # local_positive | token_uniform | single_step | grpo
+finetune_mode = "full"           # full | lora; LoRA uses rank 16, alpha 32, dropout 0
+model_path = "models/{model}"
+data = "data/train.json"
+out = "runs/{model}/{finetune_mode}/comparison_seed{seed}/{arm}"
+batch_size = 64                  # Global questions per update; divisible by four learners
+rollouts = 8                     # K responses per question
+epochs = 4
+seed = 42
+alpha = 1.0                      # STRIDE auxiliary coefficient (not LoRA alpha)
+learning_rate = "auto"           # auto: full 1e-6, LoRA 1e-4; or a positive number
+warmup_steps = 0                # Linear optimizer-update warmup, then constant LR
+kl_coefficient = 0.0             # Fixed-base original GRPO k3 penalty; LoRA only
+sampler_max_num_seqs = 32        # 16 | 32 | 64 per inference GPU
+sampler_eager = false
+generation_timeout = 3600        # Seconds per generation request
+smoke_cap = 128                  # Only used by the separate smoke stage
+
+# Epoch validation runs in separate one-GPU Slurm jobs; training does not wait.
+# Smoke runs always disable validation.
+[validation]
+mode = "slurm"                  # slurm | off
+data = "data/val.json"
+every_epochs = 1
+rollouts = 8
+partition = ""                  # Empty uses the scheduler default
+account = ""
+qos = ""
+
+# Put WANDB_API_KEY in .env, never in this file.
+# Smoke defaults to disabled; explicit CLI/env can enable W&B for smoke.
+[wandb]
+mode = "online"                 # online | offline | disabled
+project = "stride-iclr2027"
+group = "stride-comparison"
+entity = ""                     # Empty uses the account associated with the key
+
+# Upload completed epoch checkpoints automatically after successful training.
+# STRIDE variants are private; GRPO is public. Tokens belong only in .env.
+[huggingface]
+enabled = true                  # Set false to keep checkpoints local only
+epochs = [2, 3, 4]
+repo_prefix = "stride-iclr2027"
+description = ""                # Optional one-line context added to model cards
+retries = 3

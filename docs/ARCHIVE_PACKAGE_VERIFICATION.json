@@ -1,0 +1,24 @@
+{
+  "package": "Archived STRIDE training source",
+  "packaging_verification_date": "2026-11-18",
+  "archived_training_modules": 28,
+  "all_training_modules_byte_identical_to_archive": true,
+  "python_AST_parse": "passed",
+  "launch_script_shell_syntax": "passed",
+  "explicit_qwen17b_all_reference_launch_dry_run": "passed",
+  "launch_required_GPUs": 8,
+  "recorded_2048_training_data_hash": "d319351d80df073e947576189f41c23b549584ecca4bad660a2b752427f429cc",
+  "recorded_training_data_verified": true,
+  "targeted_CPU_tests": {
+    "count": 54,
+    "passed": true,
+    "modules": [
+      "tests.test_credit",
+      "tests.test_math_properties",
+      "tests.test_no_structural_reward",
+      "tests.test_training_config"
+    ]
+  },
+  "GPU_training_during_packaging": false,
+  "scope": "Archived training-code preservation and CPU/source/launch verification; original result-row and checkpoint identity are separate provenance questions"
+}

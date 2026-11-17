@@ -1,0 +1,7 @@
+# CPU audit, including tiny random Qwen3/PEFT updates; no vLLM or GPU runtime.
+torch==2.10.0
+numpy==2.2.6
+pyarrow==21.0.0
+huggingface-hub==0.36.0
+transformers==4.57.6
+peft==0.18.1

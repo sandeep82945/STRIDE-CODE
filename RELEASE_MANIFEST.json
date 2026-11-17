@@ -1,0 +1,308 @@
+{
+  "format": 1,
+  "package": "Archived STRIDE training source",
+  "archive_snapshot_date": "2026-09-25",
+  "source_files": {
+    ".env.example": "9af388d4effb80f9f5eb58021c1d784438dd979bc5ee19c8f9ce65dd8b4ab7d8",
+    ".gitignore": "76abe23444c8a6686758948ec534a798f911645945618c8d6fe9fb0f07451bf9",
+    "HF_UPLOAD.md": "ef3ae8d741d5d3932f2d3ed7d9ede102b7df7f1ae7dc8959b3b26ae0ee110c71",
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "README.md": "79f22f2e0f364fb43347776fbebf848503bce4bfe87512d23e15c1c9a32563ce",
+    "RUN_SETTINGS.md": "bec136f9c2199592709048ff951104b133f2d0e79adfc0bc2dc9630fba8f7a27",
+    "THIRD_PARTY_NOTICES.md": "d6482a70c91dfe6e3b63ce8fd96a005109bd140a6bada4674688f2bb19ac7d25",
+    "VERIFICATION.md": "01cb7450b1f59dd084047c3d0d00ac048e4c83ffb34f9ba5011e5f4c019f5814",
+    "camd/allocated_gpu.py": "a9b1aa4e976a656e36755f036fe755c1c89f554061e7aeae57fdac5affe6cb31",
+    "camd/allocation_probe.py": "f912aa405cb5494f176239550a48dcd69e5fcff6589160c71b6cceef9ab841ec",
+    "camd/allocation_probe_v2.py": "4d6e11466b68277296bddc459160e375de5088281a9bfaceaea84a695f7c0396",
+    "camd/allref_credit_gate.py": "7db95eca949737550c0388d222be54dd395308d5abc1ab12cf30d48ef14e763a",
+    "camd/compare.sbatch": "61a8546c900f4b646839337d1470deaab6bbdc4529d91e9952a9e4491628e59a",
+    "camd/compare_evaluations.py": "e3328e96716f10d31fb045c1be6d50449066e79730733afc399b10de47d6d494",
+    "camd/coordinator.sbatch": "af257af67217135cc44aa1ee466bc924fea13a5f1aea420246b679ead1847f23",
+    "camd/cpu_suite.py": "80d08c572f59ba9e5962c1633c16a47c23c68342a291af23aac2a192b0ed6c54",
+    "camd/credit_cpu_reference.json": "b9563ff8b11df8fba38ba59bc33e1a6dee5b9e0ad49c79428eb62e8af013b0a1",
+    "camd/credit_device_parity.py": "b582d5627bc7a64576b294d106b56deedf147c7028f1b4d854f5642d458b636f",
+    "camd/enter_full_runtime.sh": "e62b633664e60149d21e800ae95629359b2e574145aabed3292665ed7885dacf",
+    "camd/enter_runtime.sh": "af72c1d7b477a2485cd5197a32b885ae70cd1995d89477e490897d019efc56d5",
+    "camd/evaluate_arm.sbatch": "df1cd258787f97bcc313d48b36d9ca7a7d50ce6b99105a115875cb5b16e7922e",
+    "camd/full_host_gate.py": "7188b38f7cc531fe175e3c8abca98b63a769a233d91fd518878b0d2df0174a8b",
+    "camd/full_job.sbatch": "821f1110676d04d886e1cecd8a2ab21560fdb56ffa65c304463b550eac890da2",
+    "camd/full_stage.py": "88636bf504a93703c0466bfbe70ccb707a75138ca7ab26a504457ff13e05387d",
+    "camd/host_gate.py": "73cadb144147d730f263c394e8b79e9a2bd5f52d3ff041ba94aa2ce17b0908f1",
+    "camd/job.sbatch": "158261f7fe4fe3d4cee97e387db8c0812d08058fb2fa53f32602999eba048dee",
+    "camd/parallel_eval_coordinator.py": "7ef8d75a6430b3c36fb277e5713ec744ee333720394d3725923f2a5855bbbe53",
+    "camd/parallel_eval_workers.py": "4f30bd222e44576be1e8ab243629991eca5c4acdccc30c00bae553a253b84ff7",
+    "camd/parallel_evaluations.sbatch": "dc043ca19ebcd8b16df1e28859b44b2ff4fef32f410675e5404e8e9230bf62eb",
+    "camd/pilot.toml": "1edaaea2ce38bee21763193e9f41f970233d0a5b58213bf264077605101f2d2b",
+    "camd/probe_microbatch.py": "f3fb03bfb1bba831528c37ef06865e3b890a305ae6f5137fbf07368ed44e9a5f",
+    "camd/run_evaluation_arm.py": "7421fc1c7354bd56eab31256cca149b54336af9416eaa8621439afda96f15279",
+    "camd/run_evaluations.py": "6fb6456bd77d5d9ea29301d140e4de3814a2a1f2903a44fa752250545fb55a4f",
+    "camd/run_parallel_evaluations.py": "1fc60ec47e570c7bf3168f6a32ee31630e8b1c2249e7163d517db5bb9b2bb156",
+    "camd/stage.py": "ce659c2fad90ca087c9986d2ef9d3402a465f15c0eb9e71f6661234972edfdfe",
+    "camd/submit_full.py": "5a1e6f5800d1f53a285558e73c6ff8e88fae52fbecf33ae917433c36a4a269fc",
+    "camd/submit_pilot.py": "ad51d25684cc248dc534e77a2c1b84f9bd5cd42965c34c274ee5ed2ecc497f83",
+    "camd/test_allocated_gpu.py": "8389d6c74dfd1dbdc2991705e3a5024eaf1bd30639dc163b6695cbab62f06d76",
+    "camd/test_compare_evaluations.py": "ffeec113f4298f95567c3e6bc7f9827a0009646aaf7531a0ce846fc6f1ba86db",
+    "camd/test_full_launch.py": "d11635398114b40e6262e55a5be534f55f627533f9080aa84a5df78b4ac0815b",
+    "camd/test_parallel_eval_coordinator.py": "8ed37d8510953967e459f7e33f6b0e542e2fc1ced983983fbbf6167ec970f2af",
+    "camd/test_parallel_eval_workers.py": "5c136cb9c44d8689d052b009b63a308ad6960db65e28f3a35dae2b6b4a950473",
+    "camd/test_run_evaluation_arm.py": "c033c41d7502832b7053c4a2b2889848365b36e2ef7df3d06a7e0494478348f3",
+    "camd/test_verify_credit_reference.py": "5813a4b2e33b64f8ce670953e31c0aae51c53074dbdb3de8f0a0db0cde30e51a",
+    "camd/test_verify_full.py": "abf4b6e2cd4319044bdc6441c5eef41c486532933d66b37abb510d6b7c978ba3",
+    "camd/test_verify_outputs.py": "91ff4493fd81d94efd8a66ae83696098b56ef2d13d53a1980ddc581229316197",
+    "camd/verify_credit_reference.py": "d434d4b1e1f56d49cff85c75af55cd3f2a7ee4b8ae6da8f1aa7711c6a5c817b4",
+    "camd/verify_full.py": "eff5252d623474326396e7a91cc5dde3d8cc2e57533187cc27ad8114435126de",
+    "camd/verify_outputs.py": "11bbbc91860cc23b6db9e4d64d3e6adc3af3ba612c217b7b8feaaf5475fbeec7",
+    "configs/paper_split.json": "1c5098262a04a8820dff6d94fd0c49b3c2684bb9c4c9168dceee546d90728799",
+    "docs/ABLATIONS.md": "1ac72f99689a4b81272f1d17c75ad2b7529082dadb61a2780a84f46327074458",
+    "docs/ARCHIVE_PACKAGE_VERIFICATION.json": "c1e3f34a814129aba958001e5f0c564ff38e74895bc227ab422bf505eb78d06d",
+    "docs/DATA.md": "456605127c4b1fc5b4450cd1639bb77e7bd3387aab2a4c15ba0731b5346279c9",
+    "docs/DATA_REWARD_TEST.md": "439f3f5062436a55deef1284a50e3f96f86917720436805452a476a16638f7d4",
+    "docs/EVALUATION.md": "21459c8cdfe824c949a96d830230baa55f89ab6e0717eaa1e7d030747b9c23a5",
+    "docs/EXTENSIVE_TEST_REPORT.md": "cf098fb885a1a72b08583c30941306773d13e9305888773ba77ce86bb9f329bf",
+    "docs/PROMPT_FORMAT.md": "e6840f525746c38abc1737e795b19ed6dd9054388efee2a78841058e21e8dd51",
+    "docs/PROVENANCE.md": "87936b11d504d148ceae4f5e4ef98348ebe3b46c87a20a0b5f0aab3633b14647",
+    "docs/PUBLISHING.md": "c21778a829711213bd1dca5eaf676728d58ebb207f70f7964051e1d53d442679",
+    "docs/RUN_SETTINGS.md": "74ed39ded168b46372fa81a020191b860af0a130f4d29b6bdfe8691cb92008fb",
+    "docs/VALIDATION.md": "ce5dabf58e131e13e7414a33114f9911f1a367cf12df58e286cbce0cd1b76213",
+    "docs/function_coverage.json": "06a65764bc2f5fbd51932de050369c0589c5dc48e827499eba0205aae70f49e7",
+    "docs/original_source_hashes.json": "3f70c618729d4ff324dff06efa4c123b01e633e8351d9cf806bcc8378bcf2efa",
+    "env_config.py": "cfb006306e41a2e04beb4c4f0e9621e13e73fdaf9f50ed4cdf04063fbd7777e2",
+    "hf_config.py": "db114597d364e5c6ca5d34fe1f7d3c84896ceaae076447b5f3387c1bc94dfea3",
+    "licenses/Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "requirements-cpu.txt": "635de9c6da484356bd740edecf364f3315789b4cc12ea0c73e71d804e584a5e0",
+    "requirements-nvidia-lock.txt": "3bfb63d2a4aca2a0cb50ab6a0b269e5e93c9af0928e88150ae32c241ca6f2c7f",
+    "requirements-nvidia.txt": "d8232e3c4d309443f16dd953c41a0e09685a8da9787b525c2f79d35a90343aa3",
+    "run.py": "7f999013e8b216887f8c63bd4d851c0bd3c535bce19598b1c40cf3b7a5f196a4",
+    "run.sbatch": "d6522560ce369afae4253e80c206742f5db7881e3ede34adbb624fe7e0af1cd5",
+    "run_archived_qwen17b.sh": "1b13d74df64b431ddf1f66a96494e75c468710343f9d3a89e46c3b311c8da734",
+    "run_settings.py": "2468730d00245b036c82386aea03013544e7d90a17cb0923b235e35192b3865e",
+    "run_settings.toml": "c53828499c7c3f9fdd03f1c58b597001c2abb28ab1a84441149cf1e8e9b215e8",
+    "scripts/build_allref_preflight.py": "b4f1fce315c4a7cc914c6d0fbbceeaed64a8c62a9338117b9a323f1d939f9b4e",
+    "scripts/check_runtime.py": "a75a6f45a82f791dd14dd49cf9c31afa2502db956b0f01f1a6656f6a6669185c",
+    "scripts/download_model.py": "ac80ef2aa46cb211c10befb05982e3b69b032b00d704345dc958fcd29c47c748",
+    "scripts/package_release.py": "3b04108ddd9187d55e5ada5c4d2a6bf2f21863902d30155adb7c360024e81a33",
+    "scripts/prepare_data.py": "139c6f85dbbfd220bc4a1d0c263d106b1c7cf96e9b98c4a7dbc84f8bd25195fb",
+    "scripts/run_tests.py": "91374503bddf8da75b3cda47c761fecb727370c38acbd237f70934144d491988",
+    "scripts/slurm_compare.sbatch": "5cbf6077e26d92714c091a7ea9b67c83939e2c988677d07289987844592fdce2",
+    "scripts/slurm_eval.sbatch": "423d2cf9d558611ef0426dfb9ae7208aa492d00c9c9b49c65498ebd03792852a",
+    "scripts/slurm_run.sbatch": "d6522560ce369afae4253e80c206742f5db7881e3ede34adbb624fe7e0af1cd5",
+    "scripts/slurm_train.sbatch": "3376008ef8c82020918269f309a032324ec121603c14635c74082f5040e8a6e1",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_actor_cpu_integration.py": "83cacd99514425d110fc182c1a2880c3024c3521e23f5900c0de98721a3dd83d",
+    "tests/test_batched_learner.py": "b4c22dad329ac07357529b05e702dc49e32e64c41cdf09deaa32d684fbb3ca72",
+    "tests/test_checkpoint_extensive.py": "6b141635f0177970c4c1eb5d76bf624297df69ca23a91000a9dadea9880ff350",
+    "tests/test_checkpoint_retention.py": "c8d6495e711c89a15eb729c149eaf4eb46f3187114d202c5a145851306791617",
+    "tests/test_controlplane_extensive.py": "22e91bc30386dd4358264765d2702353eb3471419e562703a3d21448bdae13b6",
+    "tests/test_credit.py": "4946ef3d48cdd60b365020ce6b4feb1aff3f8d6f94d10469af94132a9cc4f94f",
+    "tests/test_data.py": "d1ab3b499fa93bb5249ffb8a039919296f437b9885a7786da5290c1549d4276a",
+    "tests/test_distributed.py": "31a3de4f0f836639e9650667c0c1df3d059ba0a46836469fb7455b7b4070e2cb",
+    "tests/test_env_config.py": "2dce201a754a370f32e41c2d144d9b4a2c6c3d38e639d5d1602370bfb06db3b9",
+    "tests/test_evaluation_entrypoints.py": "e638018c3802689e2fb30eb7bcad019ba45b593c51971881024cd26c72b0bfd8",
+    "tests/test_experiment_credit.py": "8aaca537d68541b7bc72d29d60c3fdfc29982b9bd8dcafa31d293448aae9115c",
+    "tests/test_hf_config.py": "e376d14013dae40de7d4090838d7736b1b3768fd705fa2314bf0884a1e604f77",
+    "tests/test_hf_export.py": "8010a12bba80c4a269634f0a5d94f6219d42bec578bf2cd36967ffca2ee5428c",
+    "tests/test_hf_launcher.py": "0b32a43b37bb7fd5824f22641f0e68d6c2ee6a76d1a942137f6355f2a1814a16",
+    "tests/test_hf_publish.py": "3a71515f1a487aca5e0ba363f68715711d4af21a6f58b8e5b84c64c1ccde034d",
+    "tests/test_launcher.py": "b7bc0dd5eddf68ac319b39ba0621ffd310c4de53287ddc575d1b92237301c26b",
+    "tests/test_legacy_adapter_retention.py": "b399f9991239786b60a7fd6e12ce5d9c251b342dba49310f0a3c06e045994698",
+    "tests/test_math_properties.py": "25dc75eed5de1ea84782a5067b904eedf6856b77f467e20c726f3db46f8ed838",
+    "tests/test_no_structural_reward.py": "4fc0550c9f33d55534bf01777c6e2ce97c5bb0bc863c2521b0dd092785f35897",
+    "tests/test_nonthinking_mode.py": "473c01603d1dcfc61c5a69381315ddc27f4f21cc6ad5aa61b3ea36cf4e0ccfdc",
+    "tests/test_parser_grading_extensive.py": "5a44995e0b853504e8be805cacaa6a86f1367f6c0c736e4aaa996316e5951987",
+    "tests/test_partial_batches.py": "858e3a9f82798f792ec0133409642fceb3ef7ede9b50a4ba282cc3c535993d6f",
+    "tests/test_portable_eval.py": "42168e5784bf613bfd0645b0595fd7fbe4faf820bd38c7dd1eb97360c5746e36",
+    "tests/test_resumable.py": "13200cfb63fd97b5ff8dee4ebdea62053bbb70aff759b7ba22a25e043560037b",
+    "tests/test_rocm_visibility.py": "a405b6c5b298076cd011fca780ea323bef95ddf5c3ff6740c656e1ce371cbca5",
+    "tests/test_run_settings.py": "8ca0ca58f383502baa06ea9280fb7f9905f587636e2c8bd8ac064f8edf42af16",
+    "tests/test_runtime_config_extensive.py": "01bead4c1b4cddc950f5c56d59da33d8c3bf3dfc7d21bc412b284b396c8ea9c0",
+    "tests/test_sampler_graph_config.py": "7d278812567bab46dda2b52d4f6595953e4304b0713b3b3ea49941a6c0109482",
+    "tests/test_sampler_ipc_extensive.py": "3df6ce87801f7aa838f36e256f0205ecc19b1ca4d43324bd4edb85abf2aa0074",
+    "tests/test_seed_comparability.py": "9dbf997cf1c9e3943073be469ac2b490dafed53cdc5ff619e8db937dc96da659",
+    "tests/test_slurm_settings.py": "92a9e0fb2d19c6e7165d0f10b602ff171b0db4616baa562c799ac83b8870b9b0",
+    "tests/test_stabilization.py": "3966b1daf505960ccc72b765a88ad31fbeab06bc80e05ba3bb2cac2d084cd749",
+    "tests/test_tracking.py": "8eeb96cbb7f3b6ba9969ab58b9a4988a0573f0b73beb7612976e80bcd3a87078",
+    "tests/test_training_config.py": "3f590a735462915c61f085c325e205e93139184d959709f02b3a4f7c525d2e4e",
+    "tests/test_training_loop_cpu.py": "6675f05f82b6d4f3390fee86cda23087d74055b8971289f103a85e38fcb275b6",
+    "tests/test_validation_jobs.py": "10383ecbd0895212fa292ac71ed72d4b238e8334f3d21f6e58efda50b2d6dcd1",
+    "training/batched_learner.py": "ce26911f3a75c99cb951fdb818d0f228e611a7dd306ffc078b25e997bb699c89",
+    "training/credit.py": "8c89f0419c142171dc5a76ebdcb7f9444aacfe91706f5c09e6cade594482df93",
+    "training/evaluate.py": "3237ab98a9b0cb8ff767dd09edadd8778ebdae7723bdd1155edcf8d34e02948a",
+    "training/evaluate_async.py": "9f7c9d910280d72ec49af9353e30f1dd0db65b80cb3a01455f98ed6a85813e93",
+    "training/experiment_credit.py": "5cd06a7ded0a96d1c1166324129abb0faf5a3c3aef86e252cd8ff922e1865bf7",
+    "training/feature_pooling.py": "e361995f3d2199fb957daca84929392bb8d3f8bb6ae9cda2667793f8fbbd0fc6",
+    "training/format_credit.py": "c190b091e8d34b22b30b52cf656c52e97eecf8ebba42eb60771c2459aec22e24",
+    "training/hf_export.py": "6a09c7047a4821b4907c6a1131bddfc30eb5a2856e8f43a1b43c815067c7aa95",
+    "training/hf_publish.py": "7ac3fada62e8b678b1cb797a0d6bc023d513ae449db74c39db2a99414aa4bd22",
+    "training/native_contract.py": "e5eeccdcaaed76bdddaccc573f6571cd93479bccfff75fef9716566ff7b59308",
+    "training/native_declared_steps.py": "f9caebe7be7ab437157ec649e02586b0d8b0fa9f343e170f5e89f77060489991",
+    "training/native_step_parser.py": "babbcb1840faa018ffd6d63e5e0fd1c76c2c2153f84530f5f39811bcb62e53e4",
+    "training/pilot_grading/__init__.py": "a8ac54f90b3e206ed1ee693867a6eb6179a6fb95811cd02f6110b7c5a8bb574e",
+    "training/pilot_grading/integer_reference.py": "02dd5876624ce7ba15c9409f9dc771a835275a8581a0f47face8f37f2ce9ddc8",
+    "training/pilot_grading/math_reference.py": "556639d769f9e0e826be4fd1b41bd81a956fb378e1c82849f0996235984d87b2",
+    "training/pilot_grading/relaxed_grader.py": "3299af8dcd145cb9cc68f01a385091360977f5b69605c4bfc902efd7f04e66e2",
+    "training/policy_runtime.py": "950319b02fba24ef21a2695ca52005ea41099ac580e2eac5abe555cbbe41ea4c",
+    "training/production_stride.py": "a547f1b13423011c68b061d3ea93dffbbe97a6fe896ce709c2310a478a22ab0b",
+    "training/resumable_checkpoint.py": "9ba7861ba96a70dad84aadfd54daefb3cbbe9a74e36a671515dc3aa57fa13006",
+    "training/runtime_config.py": "fc424872fa65de8ddb75af87fe4e80b0f03fbd80cce7a541f98106f440597978",
+    "training/sampler_worker.py": "2f668e1a0205537c483de629343aa6df7224d27d9c40534340e91187f3f4f92f",
+    "training/scoring.py": "4c11638e7753407068a4ced7cd475346eb0fd4f759780a89dcc664aeca7fdb68",
+    "training/stabilization.py": "bba97a27401ce57a4d4183c7752ae67838dd4e683511fe410987e35e63dec509",
+    "training/tracking.py": "f58f834d8faab24b624f46825c0194003be1dcef0adc1a8b9ce5da2bd3907f56",
+    "training/trainer.py": "a333323e12f30ff94fe24534deada4e28d36fd1502a65371bdf4a87ba7e480e7",
+    "training/trainer_distributed.py": "7948916fd83fef9b165bdfe8550e23be6893bb59f03da67e898047f845d23683",
+    "training/trainer_resumable.py": "ef56b4423b1f473d2ee798cb6f0c3a6ab7dca8f5bc91d8647a82e83108962c57",
+    "training/validation_jobs.py": "6ca35fe9c969db180aed2db654afc11e67964fc9061453c6ca2c6372cfbcbc32",
+    "upload_checkpoints.py": "2b6c9772d3970e9d96389ea7f49475bb5e8922e45e1bb4f762fb46a8d3125aab",
+    "verify_archived_source.py": "5b19c892d507cb2254a0e242bf9f23554fe25d6cd71bc2e07ee208c914afb962"
+  },
+  "archived_training_source_sha256": {
+    "training/batched_learner.py": "ce26911f3a75c99cb951fdb818d0f228e611a7dd306ffc078b25e997bb699c89",
+    "training/credit.py": "8c89f0419c142171dc5a76ebdcb7f9444aacfe91706f5c09e6cade594482df93",
+    "training/evaluate.py": "3237ab98a9b0cb8ff767dd09edadd8778ebdae7723bdd1155edcf8d34e02948a",
+    "training/evaluate_async.py": "9f7c9d910280d72ec49af9353e30f1dd0db65b80cb3a01455f98ed6a85813e93",
+    "training/experiment_credit.py": "5cd06a7ded0a96d1c1166324129abb0faf5a3c3aef86e252cd8ff922e1865bf7",
+    "training/feature_pooling.py": "e361995f3d2199fb957daca84929392bb8d3f8bb6ae9cda2667793f8fbbd0fc6",
+    "training/format_credit.py": "c190b091e8d34b22b30b52cf656c52e97eecf8ebba42eb60771c2459aec22e24",
+    "training/hf_export.py": "6a09c7047a4821b4907c6a1131bddfc30eb5a2856e8f43a1b43c815067c7aa95",
+    "training/hf_publish.py": "7ac3fada62e8b678b1cb797a0d6bc023d513ae449db74c39db2a99414aa4bd22",
+    "training/native_contract.py": "e5eeccdcaaed76bdddaccc573f6571cd93479bccfff75fef9716566ff7b59308",
+    "training/native_declared_steps.py": "f9caebe7be7ab437157ec649e02586b0d8b0fa9f343e170f5e89f77060489991",
+    "training/native_step_parser.py": "babbcb1840faa018ffd6d63e5e0fd1c76c2c2153f84530f5f39811bcb62e53e4",
+    "training/pilot_grading/__init__.py": "a8ac54f90b3e206ed1ee693867a6eb6179a6fb95811cd02f6110b7c5a8bb574e",
+    "training/pilot_grading/integer_reference.py": "02dd5876624ce7ba15c9409f9dc771a835275a8581a0f47face8f37f2ce9ddc8",
+    "training/pilot_grading/math_reference.py": "556639d769f9e0e826be4fd1b41bd81a956fb378e1c82849f0996235984d87b2",
+    "training/pilot_grading/relaxed_grader.py": "3299af8dcd145cb9cc68f01a385091360977f5b69605c4bfc902efd7f04e66e2",
+    "training/policy_runtime.py": "950319b02fba24ef21a2695ca52005ea41099ac580e2eac5abe555cbbe41ea4c",
+    "training/production_stride.py": "a547f1b13423011c68b061d3ea93dffbbe97a6fe896ce709c2310a478a22ab0b",
+    "training/resumable_checkpoint.py": "9ba7861ba96a70dad84aadfd54daefb3cbbe9a74e36a671515dc3aa57fa13006",
+    "training/runtime_config.py": "fc424872fa65de8ddb75af87fe4e80b0f03fbd80cce7a541f98106f440597978",
+    "training/sampler_worker.py": "2f668e1a0205537c483de629343aa6df7224d27d9c40534340e91187f3f4f92f",
+    "training/scoring.py": "4c11638e7753407068a4ced7cd475346eb0fd4f759780a89dcc664aeca7fdb68",
+    "training/stabilization.py": "bba97a27401ce57a4d4183c7752ae67838dd4e683511fe410987e35e63dec509",
+    "training/tracking.py": "f58f834d8faab24b624f46825c0194003be1dcef0adc1a8b9ce5da2bd3907f56",
+    "training/trainer.py": "a333323e12f30ff94fe24534deada4e28d36fd1502a65371bdf4a87ba7e480e7",
+    "training/trainer_distributed.py": "7948916fd83fef9b165bdfe8550e23be6893bb59f03da67e898047f845d23683",
+    "training/trainer_resumable.py": "ef56b4423b1f473d2ee798cb6f0c3a6ab7dca8f5bc91d8647a82e83108962c57",
+    "training/validation_jobs.py": "6ca35fe9c969db180aed2db654afc11e67964fc9061453c6ca2c6372cfbcbc32"
+  },
+  "training_modules_preserved_byte_for_byte": true,
+  "archived_training_module_count": 28,
+  "changed_non_training_files": [
+    {
+      "file": "README.md",
+      "reason": "Anonymous archived-source README and recovered explicit 1.7B launch instructions"
+    },
+    {
+      "file": "camd/allocated_gpu.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/allocation_probe.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/allocation_probe_v2.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/compare.sbatch",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/coordinator.sbatch",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/enter_full_runtime.sh",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/enter_runtime.sh",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/evaluate_arm.sbatch",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/full_host_gate.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/full_job.sbatch",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/full_stage.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/host_gate.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/job.sbatch",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/parallel_eval_coordinator.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/parallel_eval_workers.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/parallel_evaluations.sbatch",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/pilot.toml",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/run_evaluation_arm.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/run_evaluations.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/run_parallel_evaluations.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/stage.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/submit_full.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "camd/submit_pilot.py",
+      "reason": "Replaced personal account identifiers or machine-specific paths/site labels with placeholders"
+    },
+    {
+      "file": "VERIFICATION.md",
+      "reason": "Current archive-preservation and targeted CPU/launch verification report"
+    }
+  ],
+  "added_files": [
+    "LICENSE",
+    "configs/paper_split.json",
+    "docs/ARCHIVE_PACKAGE_VERIFICATION.json",
+    "run_archived_qwen17b.sh",
+    "verify_archived_source.py"
+  ],
+  "excluded_runtime_files": [
+    "tests/__pycache__/__init__.cpython-313.pyc",
+    "tests/__pycache__/test_credit.cpython-313.pyc"
+  ],
+  "contains_models_or_data": false,
+  "training_data_selection_metadata_included": true,
+  "checkpoint_or_paper_result_identity_certified": false,
+  "package_verification_file": "docs/ARCHIVE_PACKAGE_VERIFICATION.json",
+  "archived_training_sources_unchanged_verified": true
+}

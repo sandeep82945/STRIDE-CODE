@@ -1,0 +1,39 @@
+[training]
+model = "qwen4b"
+arm = "local_positive"
+finetune_mode = "lora"
+model_path = "/path/to/cluster-user/system/stride/models/qwen4b"
+data = "/path/to/cluster-user/system/stride_sample100_20260915/data/train.json"
+out = "/path/to/cluster-user/system/stride_sample100_20260915/checkpoints/{arm}"
+batch_size = 64
+rollouts = 8
+epochs = 4
+seed = 42
+alpha = 1.0
+learning_rate = "auto"
+sampler_max_num_seqs = 32
+sampler_eager = false
+generation_timeout = 3600
+smoke_cap = 128
+
+[validation]
+mode = "off"
+data = "/path/to/cluster-user/system/stride_sample100_20260915/data/val.json"
+every_epochs = 1
+rollouts = 8
+partition = "faculty"
+account = "faculty-acc"
+qos = "xdqos"
+
+[wandb]
+mode = "online"
+project = "stride-sample100-20260915"
+group = "qwen4b-lora-four-methods-seed42"
+entity = "YOUR_ACCOUNT"
+
+[huggingface]
+enabled = false
+epochs = [2, 3, 4]
+repo_prefix = "stride-sample100-20260915"
+description = "100-question LoRA pilot comparing four methods; quality measured separately on a fixed held-out sample."
+retries = 3
