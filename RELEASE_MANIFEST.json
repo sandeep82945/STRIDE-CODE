@@ -7,7 +7,7 @@
     ".gitignore": "76abe23444c8a6686758948ec534a798f911645945618c8d6fe9fb0f07451bf9",
     "HF_UPLOAD.md": "ef3ae8d741d5d3932f2d3ed7d9ede102b7df7f1ae7dc8959b3b26ae0ee110c71",
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "README.md": "79f22f2e0f364fb43347776fbebf848503bce4bfe87512d23e15c1c9a32563ce",
+    "README.md": "66926368ec42aea5a8bae6db7929e7b7a7c7679f86cee384c4bfdbceb47fd308",
     "RUN_SETTINGS.md": "bec136f9c2199592709048ff951104b133f2d0e79adfc0bc2dc9630fba8f7a27",
     "THIRD_PARTY_NOTICES.md": "d6482a70c91dfe6e3b63ce8fd96a005109bd140a6bada4674688f2bb19ac7d25",
     "VERIFICATION.md": "01cb7450b1f59dd084047c3d0d00ac048e4c83ffb34f9ba5011e5f4c019f5814",
@@ -190,7 +190,7 @@
   "changed_non_training_files": [
     {
       "file": "README.md",
-      "reason": "Anonymous archived-source README and recovered explicit 1.7B launch instructions"
+      "reason": "Rewritten public release README: method description, pinned inputs, archived-run reproduction instructions and stated scope/limitations"
     },
     {
       "file": "camd/allocated_gpu.py",
